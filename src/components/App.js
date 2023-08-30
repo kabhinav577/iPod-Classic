@@ -1,5 +1,8 @@
-import "../css/App.css";
 import React from "react";
+import "../css/App.css";
+
+// Importing Components
+import KnowMore from "./KnowMore";
 
 // Importing all Songs
 import song1 from "../static/songs/ram-siya-ram.mp3";
@@ -54,8 +57,49 @@ class App extends React.Component {
     };
   }
 
+  // FUNCTION FOR :: ON LONG PRESS ON THE FORWARD BTN TRACKS SEEKED FORWARD
+  seekSongForward = (e) => {
+    if (this.state.currentMenu === -2) return;
+
+    if (this.state.playing === false) return;
+
+    if (e.detail.interval < 250) {
+      this.state.audio.pause();
+      let songIndex = this.state.songIndex;
+      if (songIndex === this.state.songItemsUrl.length - 1) {
+        songIndex = 0;
+      } else {
+        songIndex++;
+      }
+
+      const songUrl = this.state.songItemsUrl[songIndex];
+      const songImgUrl = this.state.songImgItemsUrl[songIndex];
+      this.setState(
+        {
+          songIndex: songIndex,
+          songUrl: songUrl,
+          songImgUrl: songImgUrl,
+          audio: new Audio(songUrl),
+        },
+        () => {
+          this.state.audio.play();
+        }
+      );
+    } else if (e.detail.interval > 250 && e.detail.interval < 1000) {
+      const interval = e.detail.interval / 100;
+      this.setState((prevState) => {
+        prevState.audio.currentTime += interval;
+        return prevState;
+      });
+    }
+  };
+
   render() {
-    return <div>Hello World</div>;
+    return (
+      <div>
+        <KnowMore />
+      </div>
+    );
   }
 }
 
