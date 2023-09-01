@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/Case.css";
 import Display from "./Display";
+import Wheel from "./Wheel";
 
 class Case extends React.Component {
   render() {
@@ -49,6 +50,19 @@ class Case extends React.Component {
             noty={noty}
             setNoty={setNoty}
             notifyText={notifyText}
+          />
+          <Wheel
+            theme={theme}
+            active={active}
+            menuItems={menuItems}
+            currentMenu={currentMenu}
+            changeMenuForward={changeMenuForward}
+            changeMenuBackward={changeMenuBackward}
+            updateActiveMenu={updateActiveMenu}
+            togglePlayPause={togglePlayPause}
+            seekSongForward={seekSongForward}
+            seekSongReverse={seekSongReverse}
+            wheelColor={wheelColor}
           />
         </div>
       </div>
