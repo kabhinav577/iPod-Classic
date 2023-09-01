@@ -374,6 +374,7 @@ class App extends React.Component {
           wallpaperItems={wallpaperItems}
           noty={noty}
           notifyText={notifyText}
+          setNoty={this.setNoty}
           changeMenuForward={this.changeMenuForward}
           changeMenuBackward={this.changeMenuBackward}
           updateActiveMenu={this.updateActiveMenu}

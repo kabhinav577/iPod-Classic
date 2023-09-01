@@ -3,6 +3,9 @@ import "../css/Display.css";
 import Navbar from "./Navbar";
 import LockScreen from "./LockScreen";
 import Menu from "./Menu";
+import Music from "./Music";
+import Settings from "./Settings";
+import Songs from "./Songs";
 
 class Display extends React.Component {
   render() {
@@ -39,6 +42,14 @@ class Display extends React.Component {
         {currentMenu === -1 && (
           <Menu songImgUrl={songImgUrl} menuItems={menuItems} active={active} />
         )}
+        {currentMenu === 1 && <Music musicItems={musicItems} active={active} />}
+        {currentMenu === 2 && (
+          <div className="blank-div">
+            <h1 className="empty-text">Games</h1>
+          </div>
+        )}
+        {currentMenu === 3 && <Settings active={active} />}
+        {currentMenu === 4 && <Songs songItems={songItems} active={active} />}
       </div>
     );
   }
