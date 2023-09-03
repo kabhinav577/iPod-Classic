@@ -1,4 +1,5 @@
 import React from "react";
+import "../css/Themes.css";
 
 class Wallpaper extends React.Component {
   render() {

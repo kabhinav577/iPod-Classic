@@ -33,7 +33,7 @@ class Case extends React.Component {
     // console.log(this.props);
     return (
       <div className="case-container">
-        <div className="case">
+        <div style={{ backgroundColor: theme }} className="case">
           <Display
             songIndex={songIndex}
             playing={playing}
@@ -51,6 +51,7 @@ class Case extends React.Component {
             setNoty={setNoty}
             notifyText={notifyText}
           />
+          <h2 className="logo">iPod</h2>
           <Wheel
             theme={theme}
             active={active}

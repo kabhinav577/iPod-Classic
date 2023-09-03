@@ -23,7 +23,7 @@
 
 /* name of song */
 .song-details h1 {
-  margin: 0px;
+  margin-left: 3px;
   font-size: 20px;
 }
 
@@ -47,5 +47,5 @@
 /* progress bar filled */
 #progress-bar {
   height: 10px;
-  background-color: green;
+  background-color: rgb(8, 101, 8);
 }

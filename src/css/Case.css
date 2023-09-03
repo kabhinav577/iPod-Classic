@@ -1,7 +1,7 @@
 /* iPod case  */
 .case {
   height: 500px;
-  width: 300px;
+  width: 320px;
   border-radius: 40px;
   background-color: rgb(210, 210, 210);
   display: flex;
@@ -9,4 +9,9 @@
   align-items: center;
   box-shadow: inset 0 0 20px 3px black;
   -webkit-box-reflect: below 8px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(250, 250, 250, 0.1)));
+}
+
+.logo {
+  color: rgb(71, 66, 66);
+  margin: 3px 0;
 }
