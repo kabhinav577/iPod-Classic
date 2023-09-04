@@ -1,13 +1,13 @@
 /* information leaf on top left */
 
 .information-container {
-  top: -542px;
+  top: -560px;
   position: fixed;
   z-index: 2;
   transition: all 0.3s ease-in-out;
   height: max-content;
-  color: grey;
-  padding: 10px 0px;
+  color: #d0c1c1;
+  padding: 2px;
 }
 
 p {
@@ -15,29 +15,38 @@ p {
 }
 
 .info-div {
-  border: 2px solid black;
   box-sizing: border-box;
   line-height: 20px;
   font-size: 16px;
+  padding: 8px;
   max-width: 300px;
   max-height: 560px;
-  background-color: #212121;
+  background-color: #3a3434;
   transition: all 0.3s ease-in-out;
 }
 
 #info-btn {
   outline: none;
+  border: none;
   border-radius: 10px;
   cursor: pointer;
   text-align: center;
-  font-size: 15px;
-  color: #f0f5f9;
-  background-color: #212121;
-  padding: 2px 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #373434;
+  padding: 5px 15px;
   box-sizing: border-box;
+  margin-top: 10px;
   margin-left: 90px;
 }
 
+a {
+  color: #60c5ed;
+}
+a:hover {
+  color: #bfbf19;
+}
+
 #info-btn:hover {
-  background-color: #ff165d;
+  background-color: #e93169;
 }

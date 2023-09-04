@@ -1,10 +1,11 @@
 /* iPod case  */
 .case {
-  height: 500px;
-  width: 320px;
+  height: 510px;
+  width: 310px;
   border-radius: 40px;
   background-color: rgb(210, 210, 210);
   display: flex;
+  padding: 2px;
   flex-direction: column;
   align-items: center;
   box-shadow: inset 0 0 20px 3px black;
@@ -12,6 +13,6 @@
 }
 
 .logo {
-  color: rgb(71, 66, 66);
+  color: rgb(124, 114, 114);
   margin: 3px 0;
 }

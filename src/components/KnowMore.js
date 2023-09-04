@@ -53,20 +53,33 @@ class KnowMore extends React.Component {
           <p>7. Songs do play, Please checkout settings menu</p>
           <p>
             Github-Link :{" "}
-            <a href="https://github.com/RitishKhanna/iPod-Classic">iPod</a>
+            <a
+              href="https://github.com/kabhinav577/iPod-Classic"
+              target="_blank"
+              rel="noreferrer"
+            >
+              iPod-Classic
+            </a>
           </p>
           <p>
             Hosting-Link :{" "}
-            <a href="http://RitishKhanna.github.io/iPod-Classic">iPod-Hosted</a>
+            <a href="/" target="_blank" rel="noreferrer">
+              iPod-Hosted
+            </a>
           </p>
           <p>
             App Developed by :{" "}
-            <a href="https://github.com/RitishKhanna">Ritish Khanna</a>
+            <a
+              href="https://github.com/kabhinav577"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Krishna Kant Singh
+            </a>
           </p>
-          <p>credits : Apple, Flaticon</p>
         </div>
         <button id="info-btn" onClick={this.openDiv}>
-          Know More
+          How to use
         </button>
       </div>
     );

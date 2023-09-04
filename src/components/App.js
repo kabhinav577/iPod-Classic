@@ -355,7 +355,7 @@ class App extends React.Component {
       notifyText,
     } = this.state;
     return (
-      <div>
+      <div className="app">
         <KnowMore />
         <Case
           songIndex={songIndex}
