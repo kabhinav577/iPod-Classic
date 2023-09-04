@@ -63,7 +63,11 @@ class KnowMore extends React.Component {
           </p>
           <p>
             Hosting-Link :{" "}
-            <a href="/" target="_blank" rel="noreferrer">
+            <a
+              href="https://ipod-classic-7vxb.onrender.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               iPod-Hosted
             </a>
           </p>
